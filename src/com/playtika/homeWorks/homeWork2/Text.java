@@ -28,7 +28,6 @@ public class Text {
         } else {
             return new ArrayList<>(uniqueWords).subList(0, limit);
         }
-        //List<String> result = uniqueWords.stream().limit(limit).collect(Collectors.toList());
     }
 
     public Map<String, Integer> getWordsFrequencies() {
@@ -61,8 +60,6 @@ public class Text {
     private List<String> wordsCollection() {
         Pattern pattern = Pattern.compile("([a-zA-Z0-9а-яА-Я]+)");
         Matcher matcher = pattern.matcher(text.toLowerCase());
-        //List<String> words = Arrays.asList(text.toLowerCase().trim().split("[^a-zA-Z0-9а-яА-Я]+"));//[\s,.!?\t\n]+
-
         List<String> words = new ArrayList<>();
         while (matcher.find()) {
             words.add(matcher.group());
