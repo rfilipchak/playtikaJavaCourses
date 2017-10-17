@@ -1,8 +1,14 @@
 package com.playtika.homeWorks.homeWork2;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class Text {
 
@@ -19,35 +25,15 @@ public class Text {
         if (limit <= 0) {
             throw new IllegalArgumentException(" Incorrect word counter <= 0");
         }
-        Set<String> uniqueWords = new TreeSet<String>(wordsCollection());
-        List<String> topWords = new ArrayList<>(uniqueWords);
-        if (limit >= wordsCollection().size()) {
-            return topWords.subList(0, uniqueWords.size());
-        } else {
-            return topWords.subList(0, limit);
-        }
+        return wordsCollection().stream().distinct().sorted().limit(limit).collect(toList());
     }
 
-    public Map<String, Integer> getWordsFrequencies() {
-        if (wordsCollection().size() == 0) {
-            return Collections.emptyMap();
-        }
-        Map<String, Integer> wordsFrequency = new HashMap<>();
-
-        for (String word : wordsCollection()) {
-            Integer count = wordsFrequency.get(word);
-            if (count == null) wordsFrequency.put(word, 1);
-            else wordsFrequency.put(word, count + 1);
-        }
-        return wordsFrequency;
+    public Map<String, Long> getWordsFrequencies() {
+        return wordsCollection().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     }
 
     public int getLengthInChars() {
-        int totaWordsSumm = 0;
-        for (String word : wordsCollection()) {
-            totaWordsSumm += word.length();
-        }
-        return totaWordsSumm;
+        return wordsCollection().stream().mapToInt(String::length).sum();
     }
 
     private List<String> wordsCollection() {
@@ -59,6 +45,4 @@ public class Text {
         }
         return words;
     }
-
-
 }

@@ -1,4 +1,4 @@
-package com.playtika.homeWorks.HomeWork3;
+package com.playtika.homeWorks.homeWork3;
 
 import java.io.IOException;
 
@@ -15,8 +15,7 @@ public class WorkWithFiles {
         System.out.println(new FileAndTextReader(directory).agreateadGetWordsFrequenciesForDirectoriesFiles());
         System.out.println(new FileAndTextReader(directory2).agreateadGetWordsFrequenciesForDirectoriesFiles());
         new FilesCopyClass(fileSecond, fileCopySecond).fileCopyFromSourseToDestination();
-        System.out.println(new FileAndTextReader(directory1).agreateadGetWordsFrequenciesForDirectoriesFiles());
-
+        //System.out.println(new FileAndTextReader(directory1).agreateadGetWordsFrequenciesForDirectoriesFiles());
     }
 
 

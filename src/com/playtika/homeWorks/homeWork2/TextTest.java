@@ -69,18 +69,18 @@ public class TextTest {
 
     @Test
     public void getWordsFrequenciesReturnedCorrectAmountWordsFrequency() {
-        Map<String, Integer> testWordFrequencies = new HashMap<>();
-        testWordFrequencies.put("я", 2);
-        testWordFrequencies.put("в", 1);
-        testWordFrequencies.put("строку", 1);
-        testWordFrequencies.put("считываю", 2);
-        testWordFrequencies.put("текст", 2);
+        Map<String, Long> testWordFrequencies = new HashMap<>();
+        testWordFrequencies.put("я", 2L);
+        testWordFrequencies.put("в", 1L);
+        testWordFrequencies.put("строку", 1L);
+        testWordFrequencies.put("считываю", 2L);
+        testWordFrequencies.put("текст", 2L);
         assertThat(textWitDublicates.getWordsFrequencies(), is(testWordFrequencies));
     }
 
     @Test
     public void getWordsFrequenciesReturnedResultForEmptyText(){
-        assertThat(new Text("").getWordsFrequencies(), is(Collections.emptyMap()));
+        assertThat(new Text("").getWordsFrequencies(), is(Collections.EMPTY_MAP));
     }
 
     @Test

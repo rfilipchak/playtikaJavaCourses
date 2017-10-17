@@ -1,4 +1,4 @@
-package com.playtika.homeWorks.HomeWork3;
+package com.playtika.homeWorks.homeWork3;
 
 import java.io.*;
 
