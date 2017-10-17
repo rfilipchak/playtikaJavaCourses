@@ -2,21 +2,11 @@ package com.playtika.homeWorks.homeWork4;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class PersonMain {
     public static void main(String[] args) throws IOException {
-        // Работа  с файлами
-//        String fileFirst = "D:\\JavaCourses\\FilesForTests\\text1.txt";
-//        String fileSecond = "D:\\JavaCourses\\FilesForTests\\text2.txt";
-//        String fileCopySecond = "D:\\JavaCourses\\FilesForTests\\fileCopySecond.txt";
-//        String directory = "D:\\JavaCourses\\FilesForTests\\";
-//
-//        new FileAndTextReader(directory).filesFromDirectoryData();
-//        System.out.println(new FileAndTextReader(directory).agreateadGetWordsFrequenciesForDirectoriesFiles());
 
-        // Стримы  Persons
         List<Person> personsList = Arrays.asList(
                 new Person("Dave", 34, "Kiev"),
                 new Person("Dave", 32, "Kiev"),
@@ -31,21 +21,14 @@ public class PersonMain {
         );
 
 
-        ActionWithPersonList action = new ActionWithPersonList(personsList);
-        ActionWithPersonList forEmptyList = new ActionWithPersonList(Collections.EMPTY_LIST);
+        PeopleStatistics action = new PeopleStatistics(personsList);
+        //PeopleStatistics forEmptyList = new PeopleStatistics(Collections.EMPTY_LIST);
 
-        System.out.println(action.averagePersonsAgePerCity());
+        System.out.println(action.statisticsAveragePeopleAgePerCity());
         System.out.println(action.amountOfDaveNamedPersons());
-        System.out.println(action.cityMaxPersonAmount());
-        System.out.println(action.maxAgePerson().getAge());
-        System.out.println(action.personsAvarageAge());
-        System.out.println(action.countedAgeOfPerson());
-
-//        System.out.println(forEmptyList.personsAvarageAge());
-//        System.out.println(forEmptyList.maxAgePerson());
-//        System.out.println(forEmptyList.amountDaveNamedPersons());
-//        System.out.println(forEmptyList.cityMaxPersonAmount());
-//        System.out.println(forEmptyList.getSortedMaxAgePerson());
-//        System.out.println(forEmptyList.averagePersonsAgePerCity());
+        System.out.println(action.cityWithMaxPeople());
+        System.out.println(action.oldestPerson().getAge());
+        System.out.println(action.peopleAvarageAge());
+        System.out.println(action.statisticsPeopleAgeCount());
     }
 }

@@ -16,24 +16,31 @@ public class Text {
 
     public Text(String text) {
 
-        if (text.equals(null)) throw new NullPointerException(" Text can't be NULL");
+        if (text == null) throw new NullPointerException("Text can't be NULL");
         this.text = text;
 
     }
 
     public List<String> getTopWords(int limit) {
         if (limit <= 0) {
-            throw new IllegalArgumentException(" Incorrect word counter <= 0");
+            throw new IllegalArgumentException("Incorrect word counter <= 0");
         }
-        return wordsCollection().stream().distinct().sorted().limit(limit).collect(toList());
+        return wordsCollection().stream()
+                .distinct()
+                .sorted()
+                .limit(limit)
+                .collect(toList());
     }
 
     public Map<String, Long> getWordsFrequencies() {
-        return wordsCollection().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        return wordsCollection().stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     }
 
     public int getLengthInChars() {
-        return wordsCollection().stream().mapToInt(String::length).sum();
+        return wordsCollection().stream()
+                .mapToInt(String::length)
+                .sum();
     }
 
     private List<String> wordsCollection() {

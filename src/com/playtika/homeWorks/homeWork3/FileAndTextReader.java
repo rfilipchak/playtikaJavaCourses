@@ -20,14 +20,8 @@ public class FileAndTextReader {
     }
 
     public void filesFromDirectoryData() throws IOException {
-        Arrays.stream(new File(dyrectoryName).listFiles()).forEach(file -> {
-            try {
-                System.out.printf("File path: %s; File size: %d; File creation date: %s%n",
-                        file.getPath(), file.length(), getCreationDateTime(file));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+        Arrays.stream(new File(dyrectoryName).listFiles())
+                .forEach(file -> fileParameters(file));
     }
 
     public Map<String, Long> agreateadGetWordsFrequenciesForDirectoriesFiles() throws IOException {
@@ -45,6 +39,18 @@ public class FileAndTextReader {
         } catch (IOException e) {
             return Collections.emptyList();
         }
+    }
+
+    private void fileParameters(File file) {
+        try {
+            System.out.printf("File path: %s; File size: %d; File creation date: %s%n",
+                    file.getPath(),
+                    file.length(),
+                    getCreationDateTime(file));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private LocalDateTime getCreationDateTime(File file) throws IOException {
