@@ -1,7 +1,5 @@
 package com.playtika.homeWorks.homeWork1;
 
-import com.playtika.homeWorks.homeWork1.Car;
-
 public class Main {
     public static void main(String[] args) {
 

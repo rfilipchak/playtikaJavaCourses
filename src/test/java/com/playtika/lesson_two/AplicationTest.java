@@ -2,8 +2,6 @@ package com.playtika.lesson_two;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.*;
 
 public class AplicationTest {

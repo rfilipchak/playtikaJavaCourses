@@ -16,7 +16,11 @@ public class FileAndTextReader {
     private final String dyrectoryName;
 
     public FileAndTextReader(String dyrectoryName) throws IOException {
+        if(dyrectoryName == null){
+            throw new NullPointerException("directory can't be null");
+        }
         this.dyrectoryName = dyrectoryName;
+
     }
 
     public void filesFromDirectoryData() throws IOException {
