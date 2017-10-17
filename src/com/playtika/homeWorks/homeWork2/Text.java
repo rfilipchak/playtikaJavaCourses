@@ -10,41 +10,34 @@ public class Text {
 
     public Text(String text) {
 
-        if (text.equals(null)) {
-            throw new NullPointerException(" Text can't be NULL");
-        } else {
-            this.text = text;
-        }
+        if (text.equals(null)) throw new NullPointerException(" Text can't be NULL");
+        this.text = text;
+
     }
 
     public List<String> getTopWords(int limit) {
         if (limit <= 0) {
             throw new IllegalArgumentException(" Incorrect word counter <= 0");
         }
-        Set<String> uniqueWords = new TreeSet<String>();
-        uniqueWords.addAll(wordsCollection());
+        Set<String> uniqueWords = new TreeSet<String>(wordsCollection());
+        List<String> topWords = new ArrayList<>(uniqueWords);
         if (limit >= wordsCollection().size()) {
-            return new ArrayList<>(uniqueWords).subList(0, uniqueWords.size());
+            return topWords.subList(0, uniqueWords.size());
         } else {
-            return new ArrayList<>(uniqueWords).subList(0, limit);
+            return topWords.subList(0, limit);
         }
     }
 
     public Map<String, Integer> getWordsFrequencies() {
-        Map<String, Integer> wordsFrequency = new HashMap<>();
         if (wordsCollection().size() == 0) {
-            throw new IllegalArgumentException("Can't count getWordsFrequencies() for ampty collection");
+            return Collections.emptyMap();
         }
-        List<String> topWords = getTopWords(wordsCollection().size());
+        Map<String, Integer> wordsFrequency = new HashMap<>();
 
-        for (String word : topWords) {
-            int count = 0;
-            for (int i = 0; i < wordsCollection().size(); i++) {
-                if (word.equals(wordsCollection().get(i))) {
-                    count++;
-                }
-            }
-            wordsFrequency.put(word, count);
+        for (String word : wordsCollection()) {
+            Integer count = wordsFrequency.get(word);
+            if (count == null) wordsFrequency.put(word, 1);
+            else wordsFrequency.put(word, count + 1);
         }
         return wordsFrequency;
     }

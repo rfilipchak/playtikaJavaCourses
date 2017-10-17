@@ -2,68 +2,60 @@ package com.playtika.homeWorks.HomeWork3;
 
 import com.playtika.homeWorks.homeWork2.Text;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.HashMap;
 import java.util.Map;
 
 public class FileAndTextReader {
-    private final String dyrectoryName;
+    private final String directoryName;
 
-    public FileAndTextReader(String dyrectoryName) {
-        this.dyrectoryName = dyrectoryName;
+    public FileAndTextReader(String directoryName) {
+        if (directoryName.equals(null)) {
+            throw new NullPointerException("Dyrectory can't be NULL");
+        }
+        this.directoryName = directoryName;
     }
 
     public void filesFromDirectoryData() throws IOException {
-        File myFolder = new File(dyrectoryName);
-        File[] files = myFolder.listFiles();
+        File[] files = new File(directoryName).listFiles();
         for (int i = 0; i < files.length; i++) {
-            File fileData = new File(files[i].toString());
-            System.out.printf("File path: %s; File size: %d; File creation date: %s%n", fileData.getPath(), fileData.length(), getCreationDateTime(fileData));
+            System.out.printf("File path: %s; File size: %d; File creation date: %s%n",
+                    files[i].getPath(),
+                    files[i].length(),
+                    getCreationDateTime(files[i]));
         }
     }
-    public Map<String, Integer> agreateadGetWordsFrequenciesForDirectoriesFiles() throws IOException{
-        String allFileToString = null;
-        File myFolder = new File(dyrectoryName);
-        File[] files = myFolder.listFiles();
-        for (int i = 0; i < files.length; i++) {
-            File fileData = new File(files[i].toString());
-            allFileToString += readFileToString(files[i].toString());
-        }
-        return new Text(allFileToString).getWordsFrequencies();
-    }
 
-    private String readFileToString(String fileName) throws FileNotFoundException {
-        if (fileName == null) {
-            throw new NullPointerException("File sourse name can't be NULL");
-        }
+    public Map<String, Integer> agreateadGetWordsFrequenciesForDirectoriesFiles() throws IOException {
 
-        StringBuilder fileStringBuilder = new StringBuilder();
-        File file = new File(fileName);
-        if (!file.exists()) {
-            throw new FileNotFoundException(file.getName());
+        File myFolder = new File(directoryName);
+        if (!myFolder.exists()) {
+            throw new NullPointerException("No such dyrectory");
         }
-        try {
-            BufferedReader inputFile = new BufferedReader(new FileReader(file.getAbsoluteFile()));
-            try {
-                String outputString;
-                while ((outputString = inputFile.readLine()) != null) {
-                    fileStringBuilder.append(outputString);
-                    fileStringBuilder.append("\n");
+        Map<String, Integer> wordsFrequencies = new HashMap<>();
+        for (File file : myFolder.listFiles()) {
+            if(file.isFile()) {
+                Text text = new Text(readFileToString(file));
+                Map<String, Integer> getWordFromFile = text.getWordsFrequencies();
+                for (String word : getWordFromFile.keySet()) {
+                    Integer count = wordsFrequencies.get(word) == null ? 0 : wordsFrequencies.get(word);
+                    wordsFrequencies.put(word, count + getWordFromFile.get(word));
                 }
-            } finally {
-                inputFile.close();
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
-        return fileStringBuilder.toString();
+        return wordsFrequencies;
+    }
+
+    private String readFileToString(File file) throws IOException {
+        return new String(Files.readAllBytes(file.toPath()));
     }
 
     private LocalDateTime getCreationDateTime(File file) throws IOException {
-
         BasicFileAttributes attr = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
         return attr.creationTime()
                 .toInstant()

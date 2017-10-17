@@ -23,34 +23,20 @@ public class FilesCopyClass {
     }
 
     public void fileCopyFromSourseToDestination() throws IOException {
-
         File fileSourse = new File(fileSourseName);
-        if (!fileSourse.exists()) {
-            throw new FileNotFoundException("Sourse file not found");
-        }
         File fileDestination = new File(fileDestinationName);
-
-        InputStream fileSourseIs = new FileInputStream(fileSourse);
-        try {
-            OutputStream fileDestOs = new FileOutputStream(fileDestination);
-            try {
-                byte[] buffer = new byte[1024];
-                int length;
-                while ((length = fileSourseIs.read(buffer)) > 0) {
-                    fileDestOs.write(buffer, 0, length);
-                }
-            } finally {
-                fileDestOs.close();
+        if (fileDestination.exists()) {
+            fileDestination.delete();
+        }
+        try (FileInputStream fileIn = new FileInputStream(fileSourse);
+             FileOutputStream fileOut = new FileOutputStream(fileDestination)) {
+            byte[] buffer = new byte[1024];
+            int bufferLength = fileIn.read(buffer);
+            while (bufferLength > 0) {
+                fileOut.write(buffer, 0, bufferLength);
+                bufferLength = fileIn.read(buffer);
             }
         }
-        finally {
-            fileSourseIs.close();
-        }
-        if (!fileDestination.exists()){
-            throw new FileNotFoundException("Destination file not found");
-        }
-
-
     }
 
 }

@@ -3,6 +3,7 @@ package com.playtika.homeWorks.homeWork2;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,7 @@ import static org.junit.Assert.assertThat;
 public class TextTest {
     Text text = new Text("Я считываю текст в строку % *.");
     Text textWitDublicates = new Text("Я считываю текст в строку, Я считываю текст");
+
 
     @Test(expected = NullPointerException.class)
     public void nullTextCouldNotBeProcessed() {
@@ -74,6 +76,11 @@ public class TextTest {
         testWordFrequencies.put("считываю", 2);
         testWordFrequencies.put("текст", 2);
         assertThat(textWitDublicates.getWordsFrequencies(), is(testWordFrequencies));
+    }
+
+    @Test
+    public void getWordsFrequenciesReturnedResultForEmptyText(){
+        assertThat(new Text("").getWordsFrequencies(), is(Collections.emptyMap()));
     }
 
     @Test
