@@ -1,0 +1,12 @@
+*.class
+mvn*
+.mvn*
+*.cmd
+
+# Packaging #
+*.jar
+target/
+
+# idea
+*.idea/
+*.iml
