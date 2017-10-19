@@ -1,4 +1,4 @@
-package com.playtika.homeWorks.homeWork1;
+package com.playtika.homeWork;
 
 public abstract class Transport {
     String brand;

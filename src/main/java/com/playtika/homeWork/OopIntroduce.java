@@ -1,6 +1,6 @@
-package com.playtika.homeWorks.homeWork1;
+package com.playtika.homeWork;
 
-public class Main {
+public class OopIntroduce {
     public static void main(String[] args) {
 
         Car ford = new Car("Ford", "Mustang", "Coupe", 1750, 276, "Red", new Engine("V12", 12, 450), "automatic");

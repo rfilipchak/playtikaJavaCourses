@@ -1,6 +1,6 @@
-package com.playtika.homeWorks.homeWork2;
+package com.playtika.homeWork;
 
-public class WordCount {
+public class WorkWithText {
     public static void main(String[] args) {
         Text testText = new Text(" dagtrt rtewt ewqewq qew");
 

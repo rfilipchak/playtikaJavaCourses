@@ -1,4 +1,4 @@
-package com.playtika.homeWorks.homeWork2;
+package com.playtika.homeWork;
 
 import org.junit.Test;
 

@@ -1,10 +1,10 @@
-package com.playtika.homeWorks.homeWork4;
+package com.playtika.homeWork;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class PersonMain {
+public class PersonStats {
     public static void main(String[] args) throws IOException {
 
         List<Person> personsList = Arrays.asList(

@@ -1,4 +1,4 @@
-package com.playtika.homeWorks.homeWork4;
+package com.playtika.homeWork;
 
 public class Person {
     private final String name;

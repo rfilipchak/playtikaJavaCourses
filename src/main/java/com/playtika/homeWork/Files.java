@@ -1,8 +1,8 @@
-package com.playtika.homeWorks.homeWork3;
+package com.playtika.homeWork;
 
 import java.io.IOException;
 
-public class WorkWithFiles {
+public class Files {
     public static void main(String[] args) throws IOException {
         String fileFirst = "D:\\PlaytikaJavaCourses\\src\\main\\resources\\text1.txt";
         String fileSecond = "D:\\PlaytikaJavaCourses\\src\\main\\resources\\text2.txt";

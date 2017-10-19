@@ -1,4 +1,4 @@
-package com.playtika.homeWorks.homeWork3;
+package com.playtika.homeWork;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,68 +1,69 @@
-package com.playtika.homeWorks.homeWork2;
+package com.playtika.homeWork;
 
+import com.playtika.homeWork.WorkWithText;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class WordCountTest {
+public class WorkWithTextTest {
     @Test
     public void textIsSplittedByWhitespase() {
-        int wordCount = new WordCount().countWord("I have 5 dollars");//Ctrr + alt +f ..... ctr +alt
+        int wordCount = new WorkWithText().countWord("I have 5 dollars");//Ctrr + alt +f ..... ctr +alt
         assertEquals(4, wordCount);
     }
 
     @Test
     public void emtyTextWithSplitterCheck() {
-        int wordCount = new WordCount().countWord(" ");
+        int wordCount = new WorkWithText().countWord(" ");
         assertEquals(0, wordCount);
     }
 
     @Test
     public void emtyTextWithSeveralSplittersCheck() {
-        int wordCount = new WordCount().countWord("  ");
+        int wordCount = new WorkWithText().countWord("  ");
         String[] st = "  ".trim().split(" ");
         assertEquals(0, wordCount);
     }
 
     @Test
     public void emtyTextCheck() {
-        int wordCount = new WordCount().countWord("");
+        int wordCount = new WorkWithText().countWord("");
         assertEquals(0, wordCount);
     }
 
     @Test
     public void oneWordWithSlitterAfterCheck() {
-        int wordCount = new WordCount().countWord("life ");
+        int wordCount = new WorkWithText().countWord("life ");
         assertEquals(1, wordCount);
     }
 
     @Test
     public void oneWordWithSlitterBeforeCheck() {
-        int wordCount = new WordCount().countWord(" life");
+        int wordCount = new WorkWithText().countWord(" life");
         assertEquals(1, wordCount);
     }
 
     @Test
     public void oneWordWithSlitterFrameCheck() {
-        int wordCount = new WordCount().countWord(" life ");
+        int wordCount = new WorkWithText().countWord(" life ");
         assertEquals(1, wordCount);
     }
 
     @Test
     public void oneWordSentesceCheck() {
-        int wordCount = new WordCount().countWord("life");
+        int wordCount = new WorkWithText().countWord("life");
         assertEquals(1, wordCount);
     }
 
     @Test
     public void textIsSplittedBySeveralWhitespase() {
-        int wordCount = new WordCount().countWord("      I have        5         dollars        ");
+        int wordCount = new WorkWithText().countWord("      I have        5         dollars        ");
         assertEquals(4, wordCount);
     }
 
     @Test
     public void nullIsteadTextCheck() {
-        int wordCount = new WordCount().countWord(null);
+        int wordCount = new WorkWithText().countWord(null);
         assertEquals(0, wordCount);
     }
 
