@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4114a7ee-6914-4e96-814b-7c5ff740eb2f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_all_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Car.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/oop/Car.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Engine.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/oop/Engine.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/FileAndTextReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/files/FileAndTextReader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Files.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/files/Files.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/FilesCopyClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/files/FilesCopyClass.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Motorcycle.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/oop/Motorcycle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/OopIntroduce.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/oop/OopIntroduce.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/PeopleStatistics.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/PeopleStatistics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Person.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/Person.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/PersonStats.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/PersonStats.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Text.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/text/Text.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Transport.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/oop/Transport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/WorkWithText.java" afterPath="$PROJECT_DIR$/src/main/java/com/playtika/automation/tasks/text/WorkWithText.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/playtika/homeWork/TextTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/playtika/automation/tasks/text/TextTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/playtika/homeWork/WorkWithTextTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/playtika/automation/tasks/text/WorkWithTextTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/" />
@@ -609,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37005000" />
+    <option name="totallyTimeSpent" value="37020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="3" width="1934" height="1042" extended-state="0" />
@@ -889,8 +865,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/playtika/homeWork/FilesCopyClass.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="54">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
         </state>
       </provider>
