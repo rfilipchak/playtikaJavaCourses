@@ -8,5 +8,5 @@ mvn*
 target/
 
 # idea
-*.idea/
+.idea/
 *.iml

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4114a7ee-6914-4e96-814b-7c5ff740eb2f" name="Default" comment="">
+    <list default="true" id="679fd255-f567-4690-997b-c3e1eca9d3e6" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path=".idea/" />
-    <ignored path="target/" />
-    <manually-removed-from-ignored>
-      <directory path="./" />
-    </manually-removed-from-ignored>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,77 +12,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="origin" />
-      </map>
-    </option>
-    <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/playtika/lesson_one/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/lesson_one/Main_lesson_one.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork1/Car.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork1/Engine.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork1/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork1/Motorcycle.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork1/Transport.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/lesson_two/AplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/lesson_two/Aplication.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork2/WordCountTest.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork2/WordCount.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/HomeWork3/FilesCopyClass.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/HomeWork3/WorkWithFiles.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/HomeWork3/FileAndTextReader.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork2/TextTest.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork3/WorkWithFiles.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork3/FilesCopyClass.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork2/Text.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork4/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork4/ActionWithPersonList.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork4/PersonMain.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork4/PeopleStatistics.java" />
-        <option value="$PROJECT_DIR$/src/com/playtika/homeWorks/homeWork3/FileAndTextReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/lesson_two/AplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork1/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork1/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork1/Engine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork1/Motorcycle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork1/Transport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork2/Text.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork2/WordCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork3/FilesCopyClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork4/PeopleStatistics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork4/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork4/PersonMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/playtika/homeWorks/homeWork2/TextTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/playtika/homeWorks/homeWork2/WordCountTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/lesson_two/Aplication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/playtika/lesson_two/AplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork3/WorkWithFiles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork3/FileAndTextReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWorks/homeWork1/HomeWork1Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/homeWork2/WorkWithText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Text.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/FilesCopyClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/homeWork4/PersonStats.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/playtika/homeWork/PersonStats.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/playtika/homeWork/TextTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -97,13 +40,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -130,12 +66,6 @@
       </expand>
       <select />
     </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-2" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -170,29 +100,6 @@
       <pane id="Scratches" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PlaytikaJavaCourses\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.playtika.homeWork" />
-      <recent name="com.playtika.homeWorks.homeWork2" />
-      <recent name="com.playtika.lesson_two" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PlaytikaJavaCourses\src\com\playtika\homeWorks" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -205,121 +112,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TextTest">
-    <configuration name="PersonStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.playtika.homeWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.playtika.homeWork.PersonStats" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PlaytikaJavaCourses" />
-      <envs />
-    </configuration>
-    <configuration name="TextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.playtika.homeWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PlaytikaJavaCourses" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.playtika.homeWork" />
-      <option name="MAIN_CLASS_NAME" value="com.playtika.homeWork.TextTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="WorkWithText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.playtika.homeWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.playtika.homeWork.WorkWithText" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PlaytikaJavaCourses" />
-      <envs />
-    </configuration>
-    <configuration name="WorkWithTextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.playtika.homeWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PlaytikaJavaCourses" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.playtika.homeWork" />
-      <option name="MAIN_CLASS_NAME" value="com.playtika.homeWork.WorkWithTextTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="WorkWithTextTest.textIsSplittedByWhitespase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.playtika.homeWork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PlaytikaJavaCourses" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.playtika.homeWork" />
-      <option name="MAIN_CLASS_NAME" value="com.playtika.homeWork.WorkWithTextTest" />
-      <option name="METHOD_NAME" value="textIsSplittedByWhitespase" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -399,200 +194,15 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.PersonStats" />
-      <item index="1" class="java.lang.String" itemvalue="Application.WorkWithText" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WorkWithTextTest.textIsSplittedByWhitespase" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WorkWithTextTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TextTest" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TextTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PersonStats" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WorkWithTextTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WorkWithTextTest.textIsSplittedByWhitespase" />
-        <item index="4" class="java.lang.String" itemvalue="Application.WorkWithText" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4114a7ee-6914-4e96-814b-7c5ff740eb2f" name="Default" comment="" />
-      <created>1508172334733</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1508172334733</updated>
-      <workItem from="1508172338402" duration="12406000" />
-      <workItem from="1508184999312" duration="20907000" />
-      <workItem from="1508395876595" duration="2784000" />
-    </task>
-    <task id="LOCAL-00001" summary="Lesson One">
-      <created>1508173724297</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1508173724297</updated>
-    </task>
-    <task id="LOCAL-00002" summary="files">
-      <created>1508174307426</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1508174307426</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Home work 1">
-      <created>1508174375648</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1508174375648</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Lesson two and libraries">
-      <created>1508175369750</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1508175369750</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Home work 2">
-      <created>1508176331197</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1508176331197</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Home work2 remarks">
-      <created>1508177713628</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1508177713628</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Home Work 3">
-      <created>1508178495311</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1508178495311</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Refactoring for Homework 2 and Homework 3">
-      <created>1508229183936</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1508229183936</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Homework 4">
-      <created>1508230872384</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1508230872384</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Homework 4 refactoring">
-      <created>1508238888876</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1508238888876</updated>
-    </task>
-    <task id="LOCAL-00011" summary="General project to Maven project">
-      <created>1508245060887</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1508245060887</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add gitignore file">
-      <created>1508405276021</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1508405276021</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Homework 4 refactoring">
-      <created>1508405350793</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1508405350793</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add gitignore file">
-      <created>1508405502932</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1508405502932</updated>
-    </task>
-    <task id="LOCAL-00015" summary="remove .idea folder">
-      <created>1508405576559</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1508405576559</updated>
-    </task>
-    <task id="LOCAL-00016" summary="remove .idea folder">
-      <created>1508405685377</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1508405685377</updated>
-    </task>
-    <task id="LOCAL-00017" summary="remove .idea folder">
-      <created>1508405896357</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1508405896357</updated>
-    </task>
-    <task id="LOCAL-00018" summary="remove .idea folder">
-      <created>1508406539203</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1508406539203</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="TextTest - 2017.10.17 at 11h 49m 12s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest - 2017.10.17 at 11h 55m 11s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest - 2017.10.17 at 11h 56m 29s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest - 2017.10.17 at 15h 12m 18s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest - 2017.10.17 at 15h 50m 31s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest - 2017.10.19 at 10h 20m 36s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest - 2017.10.19 at 10h 37m 27s.xml">
-      <configuration name="TextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextTest_getWordsFrequenciesReturnedResultForEmptyText - 2017.10.16 at 22h 19m 56s.xml">
-      <configuration name="TextTest.getWordsFrequenciesReturnedResultForEmptyText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WorkWithTextTest - 2017.10.19 at 10h 20m 17s.xml">
-      <configuration name="WorkWithTextTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WorkWithTextTest_textIsSplittedByWhitespase - 2017.10.19 at 10h 20m 12s.xml">
-      <configuration name="WorkWithTextTest.textIsSplittedByWhitespase" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37152000" />
+    <option name="totallyTimeSpent" value="291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="3" width="1934" height="1042" extended-state="0" />
@@ -605,12 +215,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08591249" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47854784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47854784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32013202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6259626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6259626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32337245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32337245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -676,9 +286,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -704,31 +311,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson One" />
-    <MESSAGE value="files" />
-    <MESSAGE value="Home work 1" />
-    <MESSAGE value="Lesson two and libraries" />
-    <MESSAGE value="Home work 2" />
-    <MESSAGE value="Home work2 remarks" />
-    <MESSAGE value="Home Work 3" />
-    <MESSAGE value="Refactoring for Homework 2 and Homework 3" />
-    <MESSAGE value="Homework 4" />
-    <MESSAGE value="General project to Maven project" />
-    <MESSAGE value="Homework 4 refactoring" />
-    <MESSAGE value="add gitignore file" />
-    <MESSAGE value="remove .idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove .idea folder" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="285" height="235" key="Git.Branch.Popup" />
-    <state width="285" height="235" key="Git.Branch.Popup/1920.1080/1920.1080" />
-    <state width="285" height="235" key="Git.Branch.Popup@1920.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,14 +452,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Car.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/playtika/homeWork/Files.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/playtika/homeWork/FilesCopyClass.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6399">
@@ -886,92 +460,13 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>PlaytikaJavaCourses</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
