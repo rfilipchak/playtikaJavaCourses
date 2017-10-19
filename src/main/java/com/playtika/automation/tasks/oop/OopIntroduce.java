@@ -1,4 +1,8 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks.oop;
+
+import com.playtika.automation.tasks.oop.Car;
+import com.playtika.automation.tasks.oop.Engine;
+import com.playtika.automation.tasks.oop.Motorcycle;
 
 public class OopIntroduce {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks.text;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,6 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks.text;
 
+import com.playtika.automation.tasks.text.Text;
 import org.junit.Test;
 
 import java.util.Arrays;

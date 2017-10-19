@@ -1,4 +1,4 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks.text;
 
 public class WorkWithText {
     public static void main(String[] args) {

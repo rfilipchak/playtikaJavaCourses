@@ -1,4 +1,4 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks.files;
 
 import java.io.IOException;
 

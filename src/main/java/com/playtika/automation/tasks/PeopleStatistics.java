@@ -1,4 +1,4 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks;
 
 import java.util.Comparator;
 import java.util.List;

@@ -1,6 +1,5 @@
-package com.playtika.homeWork;
+package com.playtika.automation.tasks.text;
 
-import com.playtika.homeWork.WorkWithText;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
