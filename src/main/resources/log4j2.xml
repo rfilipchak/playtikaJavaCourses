@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Configuration status='info'>
+<Configuration status='all'>
     <Appenders>
         <Console name='console' target='SYSTEM_OUT'>
-            <PatternLayout   pattern='[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n' />
+            <PatternLayout pattern='[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n'/>
         </Console>
         <File name="LogFile" fileName="D:\PlaytikaJavaCourses\Logs\logging.log">
             <PatternLayout>
@@ -11,10 +11,6 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name='com.playtika.automation.tasks.Aplication' additivity="false">
-            <appender-ref ref='console' level='info'/>
-
-        </Logger>
         <Root level='ALL'>
             <appender-ref ref='LogFile'/>
             <appender-ref ref='console' level='info'/>
