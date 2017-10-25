@@ -1,91 +1,97 @@
 package com.playtika.automation.tasks.text;
 
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.assertThat;
 
-public class TextTest {
+
+public class TextTestNg {
     Text text = new Text("Я считываю текст в строку % *.");
     Text textWitDublicates = new Text("Я считываю текст в строку, Я считываю текст");
 
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
 
-    @Test
-    public void throwsNothing() {
-        // no exception expected, none thrown: passes.
-    }
-
-    @Test
-    public void throwsExceptionWithSpecificType() {
-        thrown.expect(NullPointerException.class);
-        thrown.expectMessage("ISSUES");
-        throw new NullPointerException("ISSUES");
-    }
-
-    @Test(expected = NullPointerException.class)
+    @Test(expectedExceptions = NullPointerException.class, groups = "allTextTests")
     public void nullTextCouldNotBeProcessed() {
         new Text(null);
     }
 
 
-    @Test
+    @Test(groups = {"OutTextTest", "allTextTests"},
+            dependsOnMethods = "nullTextCouldNotBeProcessed")
     public void punctuationProcessedLikeEmptyCollection() {
         assertThat((new Text(" ,....!").getTopWords(5)), is(emptyCollectionOf(String.class)));
     }
 
-    @Test
+    @Test(groups = {"OutTextTest", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void invisibleSymbolsProcessedLikeEmptyCollection() {
         assertThat((new Text("\\\n\\\t\\\f\\\r").getTopWords(5)), is(emptyCollectionOf(String.class)));
     }
 
-    @Test
+    @Test(groups = {"OutTextTest", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void symbolsProcessedLikeEmptyCollection() {
 
         assertThat((new Text("&^(()^&%*^^^*(*()@#)").getTopWords(5)), is(emptyCollectionOf(String.class)));
     }
 
-    @Test
+    @Test(groups = {"OutTextTest", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void emptyTextProcessedLikeEmptyCollection() {
+
         assertThat(new Text("").getTopWords(5), is(empty()));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expectedExceptions = IllegalArgumentException.class,
+            groups = {"getTopWords", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void getTopWordCouldNotBeProcessedZero() {
         text.getTopWords(0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expectedExceptions = IllegalArgumentException.class,
+            groups = {"getTopWords", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void getTopWordCouldNotBeProcessedNegativeCount() {
         text.getTopWords(-15);
     }
 
-    @Test
+    @Test(groups = {"getTopWords", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void getTopWordsReturnedCorrectWordsAndOder() throws Exception {
         assertThat(text.getTopWords(5), is(Arrays.asList("в", "строку", "считываю", "текст", "я")));
     }
 
-    @Test
-    public void getWordsFrequenciesForApperCaseSymbols() {
+    @Test(groups = {"getTopWords", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
+    public void getTopWordsForApperCaseSymbols() {
         assertThat(new Text("StrinG IntEGeR DouBlE ").getTopWords(3), is(Arrays.asList("double", "integer", "string")));
     }
 
-    @Test
+    @Test(groups = {"getTopWords", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "punctuationProcessedLikeEmptyCollection"})
     public void getTopWordsReturnedCorrectResultFromTextWithDublicates() throws Exception {
         assertThat(new Text("Я считываю текст в строку, Я считываю текст").getTopWords(5)
                 , is(Arrays.asList("в", "строку", "считываю", "текст", "я")));
     }
 
 
-    @Test
+    @Test(groups = {"getWordsFrequencies", "allTextTests"},
+            dependsOnMethods = "nullTextCouldNotBeProcessed")
     public void getWordsFrequenciesReturnedCorrectAmountWordsFrequency() {
         Map<String, Long> testWordFrequencies = new HashMap<>();
         testWordFrequencies.put("я", 2L);
@@ -96,26 +102,35 @@ public class TextTest {
         assertThat(textWitDublicates.getWordsFrequencies(), is(testWordFrequencies));
     }
 
-    @Test
+    @Test(groups = {"getWordsFrequencies", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "getWordsFrequenciesReturnedCorrectAmountWordsFrequency"})
     public void getWordsFrequenciesReturnedResultForEmptyText() {
         assertThat(new Text("").getWordsFrequencies(), is(Collections.EMPTY_MAP));
     }
 
-    @Test
+    @Test(groups = {"getTopWords", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "emptyTextProcessedLikeEmptyCollection"})
     public void getTopWordsProcessedMoreThanMaxLimitOfWordsAsMax() throws Exception {
         int highestLimit = 1000;
         assertThat(new Text("Я считываю текст в строку, Я считываю текст").getTopWords(highestLimit)
                 , is(Arrays.asList("в", "строку", "считываю", "текст", "я")));
     }
 
-    @Test
+    @Test(groups = {"getLengthInChars", "allTextTests"},
+            dependsOnMethods = "nullTextCouldNotBeProcessed")
     public void getLengthInCharsReturnTotalEmountOfChars() {
+
         assertThat(text.getLengthInChars(), is(21));
     }
 
-    @Test
+    @Test(groups = {"getLengthInChars", "allTextTests"},
+            dependsOnMethods = {"nullTextCouldNotBeProcessed",
+                    "getLengthInCharsReturnTotalEmountOfChars"})
     public void getLengthForEmptyTextEqualZero() {
-        assertThat(new Text("").getLengthInChars(), equalTo(0));
+        assertThat(new Text("")
+                .getLengthInChars(), equalTo(0));
     }
 }
 

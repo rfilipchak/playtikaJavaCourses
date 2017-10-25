@@ -1,5 +1,8 @@
 package com.playtika.automation.tasks.files;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,11 +16,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class FileAndTextReader {
+    private static final Logger LOG
+            = LoggerFactory.getLogger(FileAndTextReader.class);
+
     private final String dyrectoryName;
 
     public FileAndTextReader(String dyrectoryName) throws IOException {
         if(dyrectoryName == null){
-            throw new NullPointerException("directory can't be null");
+            LOG.error("directory can't be null", new NullPointerException());
         }
         this.dyrectoryName = dyrectoryName;
 
@@ -29,18 +35,23 @@ public class FileAndTextReader {
     }
 
     public Map<String, Long> agreateadGetWordsFrequenciesForDirectoriesFiles() throws IOException {
-        return Files.list(Paths.get(dyrectoryName)).map(path -> readFileToStringLine(path))
-                .flatMap(Collection::stream)
-                .map(s -> s.split("\\s+"))
-                .flatMap(Arrays::stream)
-                .filter(w -> w.matches("([a-zA-Z0-9а-яА-Я]+)"))
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+       try {
+           return Files.list(Paths.get(dyrectoryName)).map(path -> readFileToStringLine(path))
+                   .flatMap(Collection::stream)
+                   .map(s -> s.split("\\s+"))
+                   .flatMap(Arrays::stream)
+                   .filter(w -> w.matches("([a-zA-Z0-9а-яА-Я]+)"))
+                   .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+       }catch (IOException e){
+           LOG.error("No such durectory ", e);
+           return Collections.emptyMap();
+       }
     }
-
     private List<String> readFileToStringLine(Path path) {
         try {
             return Files.readAllLines(path);
         } catch (IOException e) {
+            LOG.debug("Empty collection",e);
             return Collections.emptyList();
         }
     }
@@ -52,7 +63,7 @@ public class FileAndTextReader {
                     file.length(),
                     getCreationDateTime(file));
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("Getting file parrameters error",e);
         }
 
     }

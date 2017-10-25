@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GroupTestSuite">
+    <test name="test1">
+
+        <groups>
+
+            <define name="all">
+                <include name="OutTextTest"/>
+                <include name="getWordsFrequencies"/>
+                <include name="getLengthInChars"/>
+            </define>
+
+            <run>
+                <include name="all"/>
+            </run>
+
+        </groups>
+
+        <classes>
+            <class name="com.playtika.automation.tasks.text.TextTestNg" />
+        </classes>
+
+    </test>
+</suite>

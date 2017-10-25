@@ -1,5 +1,8 @@
 package com.playtika.automation.tasks.text;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -13,17 +16,23 @@ import static java.util.stream.Collectors.toList;
 public class Text {
 
     private final String text;
+    private static final Logger LOG
+            = LoggerFactory.getLogger(Text.class);
 
     public Text(String text) {
 
-        if (text == null) throw new NullPointerException("Text can't be NULL");
+        if (text == null) {
+            LOG.error("Text can't be NULL",
+                    new NullPointerException("Text can't be NULL"));
+        }
         this.text = text;
 
     }
 
     public List<String> getTopWords(int limit) {
         if (limit <= 0) {
-            throw new IllegalArgumentException("Incorrect word counter <= 0");
+            LOG.error("Incorrect word counter <= 0",
+                    new IllegalArgumentException());
         }
         return wordsCollection().stream()
                 .distinct()

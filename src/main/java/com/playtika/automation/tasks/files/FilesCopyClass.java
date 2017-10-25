@@ -1,21 +1,25 @@
 package com.playtika.automation.tasks.files;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 
 public class FilesCopyClass {
     private String fileSourseName;
     private String fileDestinationName;
+    private static final Logger LOG
+            = LoggerFactory.getLogger(FilesCopyClass.class);
 
     public FilesCopyClass(String fileSourseName, String fileDestinationName) throws FileNotFoundException {
-
         if (fileSourseName == null) {
-            throw new NullPointerException("File sourse name can't be NULL");
+            LOG.error("File sourse name can't be NULL", new NullPointerException());
         } else if (fileSourseName.isEmpty()) {
-            throw new FileNotFoundException("fileSourseName can't be empty");
+            LOG.error("fileSourseName can't be empty", new FileNotFoundException();
         } else if (fileDestinationName == null) {
-            throw new NullPointerException("File destination name can't be NULL");
+            LOG.error("File destination name can't be NULL", new NullPointerException());
         } else if (fileDestinationName.isEmpty()) {
-            throw new FileNotFoundException("fileDestinationName can't be empty");
+            LOG.error("fileDestinationName can't be empty", new FileNotFoundException());
         }
 
         this.fileSourseName = fileSourseName;

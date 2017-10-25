@@ -1,5 +1,8 @@
 package com.playtika.automation.tasks;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -9,11 +12,15 @@ import java.util.stream.Collectors;
 import static java.util.stream.Collectors.*;
 
 public class PeopleStatistics {
+    private static final Logger LOG
+            = LoggerFactory.getLogger(PeopleStatistics.class);
+
     private final List<Person> people;
 
     public PeopleStatistics(List<Person> people) {
         if (people.isEmpty()){
-            throw new IllegalArgumentException("Can't count Statistics for empty list");
+            LOG.error("Can't count Statistics for empty list",
+                    new IllegalArgumentException());
         }
         this.people = people;
     }
